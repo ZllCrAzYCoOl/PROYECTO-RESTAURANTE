@@ -37,9 +37,9 @@ app.use("/api/dishes", dishRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/payments", paymentRoutes);
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../FrontEnd/index.html"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../FrontEnd/index.html"));
+// });
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
